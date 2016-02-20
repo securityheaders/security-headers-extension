@@ -7,7 +7,7 @@ var currentTab = "";
 // Fire when user clicks icon
 chrome.browserAction.onClicked.addListener(function (tab) {
 	var host = tab.url.match(/^[\w-]+:\/*\[?([\w\.:-]+)\]?(?::\d+)?/)[0];
-	
+
 	if (hasClicked) {
 		chrome.tabs.create({ url: "https://securityheaders.io/?hide=on&source=chromeplugin&q=" + host });
 	}
@@ -24,10 +24,12 @@ chrome.browserAction.onClicked.addListener(function (tab) {
 });
 
 // Handle tab switching
-chrome.tabs.onActivated.addListener(function (tabId, changeInfo, tab) {
+chrome.tabs.onActivated.addListener(function ({ tabId }) {
     setDefault();
-    currentURL = tab.url;
     currentTab = tabId;
+    chrome.tabs.get(tabId, function (tab) {
+        currentURL = tab.url;
+    });
 });
 
 // Handle URL changes
