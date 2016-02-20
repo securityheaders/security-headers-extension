@@ -3,6 +3,11 @@
     "short_name": "securityheaders.io",
     "description": "Click to show the score for the current page. Click again to show the full report on our site.",
     "version": "1.0",
+    "applications": {
+        "gecko": {
+            "id": "score@securityheaders.io"
+        }
+    },
     "permissions": ["tabs", "https://securityheaders.io/*"],
     "background": {
         "page": "background.html"
@@ -14,7 +19,7 @@
         "default_title": "SecurityHeaders.io"
     },
     "manifest_version": 2,
-    "icons": { 
+    "icons": {
         "48": "icons/security-headers-icon-48.png",
         "128": "icons/security-headers-icon-128.png" }
 }
