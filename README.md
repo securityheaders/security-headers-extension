@@ -1,4 +1,7 @@
-# securityheaders.io chrome extension
-The Chrome extension for securityheaders.io
+# securityheaders.io browser extension
+The Chrome and Firefox extension for securityheaders.io
 
-You can get the release version of the extension here: https://scotthel.me/shce
+You can get the release version of the extension here: 
+
+Chrome - https://scotthel.me/shce
+Firefox - https://scotthel.me/shfe
