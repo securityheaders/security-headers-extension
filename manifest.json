@@ -2,7 +2,7 @@
     "name": "SecurityHeaders.io Analyser",
     "short_name": "securityheaders.io",
     "description": "Click to show the score for the current page. Click again to show the full report on our site.",
-    "version": "1.0",
+    "version": "1.1",
     "applications": {
         "gecko": {
             "id": "scotthelme@hotmail.com"
